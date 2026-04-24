@@ -1,1 +1,51 @@
+#include <iostream>
+#include <fstream>
+#include <ctime>
+#include <string>
 
+using namespace std;
+
+// Funcion para obtener la fecha y hora actual
+string obtenerMarcaDeTiempo() {
+    time_t ahora = time(0);
+    char buffer[80];
+    strftime(buffer, sizeof(buffer), "%Y-%m-%d %H:%M:%S", localtime(&ahora));
+    return string(buffer);
+}
+
+int main() {
+    int num1, num2, num3, resta;
+    
+    // 1. Pedir 3 numeros
+    cout << "Ingrese el primer numero: ";
+    cin >> num1;
+    
+    cout << "Ingrese el segundo numero: ";
+    cin >> num2;
+    
+    cout << "Ingrese el tercer numero: ";
+    cin >> num3;
+    
+    // 2. Realizar RESTA de los 3
+    resta = num1 - num2 - num3; // <-- RESTA, NO SUMA
+    cout << "\nEl resultado es: " << resta << endl;
+    
+    // 3. Registrar en log
+    ofstream archivoLog("resta_log.txt", ios::app);
+    
+    if (archivoLog.is_open()) {
+        archivoLog << "[" << obtenerMarcaDeTiempo() << "]"
+                   << " El Resultado de la Operacion: "
+                   << num1 << " - " << num2 << " - " << num3 // <-- SIGNOS MENOS
+                   << " = " << resta << endl;
+                   
+        archivoLog.close();
+        cout << "Operacion registrada en 'resta_log.txt'" << endl;
+        
+    } else {
+        cout << "Error: No se pudo abrir el archivo de log." << endl;
+    }
+    
+    system("pause");
+    return 0;
+}
