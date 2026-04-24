@@ -1,2 +1,28 @@
+//suma de dos numeros mejorado
+#include <stdio.h>
+#include <conio.h>
 
-a
+int main (void) 
+{
+    int valor1, valor2, R;
+
+    printf("Introduce el primer numero: ");
+    scanf("%d", &valor1);
+
+    printf("Introduce el segundo numero: ");
+    scanf("%d", &valor2);
+
+    R = valor1 + valor2;
+
+    
+    if (R > 0) {
+        printf("El resultado es %d positivo\n", R);
+    } 
+    else if (R < 0) {
+        printf("El resultado es %d negativo\n", R);
+    } 
+    else {
+        printf("El resultado es %d (es cero)\n", R);
+    }
+}
+
