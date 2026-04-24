@@ -1,1 +1,17 @@
+//calcular el area de un rectangulo
+#include <stdio.h>
+#include <conio.h>
+int main (void)
+{
+int base, altura,area;
+printf ("introduce el valor de la base");
+scanf ("%d", &base);
+printf ("introduce el valor de la altura");
+scanf ("%d", &altura);
+ area=base*altura;
+printf ("el resultado del area de un rectangulo es %d",area );	
+	
+	
+	
+}
 
