@@ -26,3 +26,12 @@ int main (void)
     }
 }
 
+Algoritmo LA_SUMA_DE_DOS_NUMEROS
+	DEFINIR NUM1,NUM2,R COMO ENTERO
+	LEER NUM1
+	LEER NUM2
+	R<-NUM1+NUM2
+	Escribir "LA SUMA ES",R
+FinAlgoritmo
+
+
