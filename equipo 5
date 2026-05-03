@@ -14,4 +14,3 @@ printf ("el resultado del area de un rectangulo es %d",area );
 	
 	
 }
-
