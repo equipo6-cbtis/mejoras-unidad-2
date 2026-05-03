@@ -1,0 +1,20 @@
+Algoritmo Multiplicacionde3num
+	Definir num1, num2, num3, R Como Real
+	Escribir 'ingrasar primer numero'Sin Saltar
+	Leer num1
+	Escribir 'ingresar segundo numero'Sin Saltar
+	Leer num2
+	Escribir 'ingrasar tercer numero'Sin Saltar
+	Leer num3
+	R <- num1*num2*num3
+	Escribir 'EL RESULTADO ES: ', R
+	Si R>0 Entonces
+		Escribir 'EL RESULTADO ES POSITIVO'
+	SiNo
+		Si R<0 Entonces
+			Escribir 'EL RESULTADO ES NEGATIVO'
+		SiNo
+			Escribir 'EL RESULTADO ES CERO'
+		FinSi
+	FinSi
+FinAlgoritmo
