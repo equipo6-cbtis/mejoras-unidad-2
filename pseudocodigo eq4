@@ -1,0 +1,32 @@
+Algoritmo DivisionMejorada
+		
+		Definir num1, num2, resultado Como Real
+		
+		Escribir "Ingresa el primer numero:"
+		Leer num1
+		
+		Escribir "Ingresa el segundo numero:"
+		Leer num2
+		
+		Si num2 = 0 Entonces
+			Escribir "Error: no se puede dividir entre cero"
+		SiNo
+			resultado <- num1 / num2
+			
+			Escribir "Resultado:", resultado
+			
+			// NUEVA MEJORA
+			Si resultado > 0 Entonces
+				Escribir "El resultado es POSITIVO"
+			SiNo
+				Si resultado < 0 Entonces
+					Escribir "El resultado es NEGATIVO"
+				SiNo
+					Escribir "El resultado es CERO"
+				FinSi
+			FinSi
+			
+		FinSi
+		
+FinProceso
+
