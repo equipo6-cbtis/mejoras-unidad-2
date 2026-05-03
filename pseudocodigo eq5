@@ -1,1 +1,23 @@
-
+Algoritmo MEJORA_AREA_DEL_RECTANGULO
+	
+	// Entrada de datos con validacion basica
+	Repetir
+		Escribir 'Ingrese la base del rectángulo (mayor a 0):'
+		Leer base
+	Hasta Que base>0
+	
+	Repetir
+		Escribir 'Ingrese la altura del rectángulo (mayor a 0):'
+		Leer altura
+	Hasta Que altura>0
+	
+	// Procesamiento
+	area <- base*altura
+	perimetro <- 2*(base+altura)
+	
+	// Salida de resultados
+	Escribir '--- Resultados ---'
+	Escribir 'El área del rectángulo es: ', area
+	Escribir 'El perímetro del rectángulo es: ', perimetro
+	
+FinAlgoritmo
