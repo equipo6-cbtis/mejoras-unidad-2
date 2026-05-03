@@ -1,0 +1,19 @@
+Algoritmo MEJORA_DE_LA_RESTA_DE_3
+		Escribir "INTRODUCE EL PRIMER NUMERO"
+		Leer NUM1
+		Escribir "INTRODUCE EL SEGUNDO NUMERO"
+		Leer NUM2
+		Escribir "INTRODUCE EL TERCER NUMERO"
+		Leer NUM3
+		R <- NUM1 - NUM2 - NUM3
+		Escribir "EL RESULTADO ES ", R
+		Si R > 0 Entonces
+			Escribir "EL RESULTADO ES UN NUMERO POSITIVO"
+		SiNo
+			Si R < 0 Entonces
+				Escribir "EL RESULTADO ES UN NUMERO NEGATIVO"
+			SiNo
+				Escribir "EL RESULTADO ES CERO"
+			FinSi
+		FinSi
+FinAlgoritmo
